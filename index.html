@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/9bc83c17aa.js" crossorigin="anonymous"></script>
+    <title>Trivia</title>
+</head>
+
+<header class="claseencabezado">
+    <span class="icons"> <i class="fa-solid fa-earth-asia"></i></span>
+
+</header>
+
+    <main class="container">
+        <section class="containerSection hidden" id="welcome">
+            <div class="boxWelcome">
+                <div style="margin-left: 100px;flex-direction: column;">
+                    <div>
+                        <h2>Bienvenidx!</h2>
+                        <p>Veamos cuanto sabes sobre el espacio exterior</p>
+                    </div>
+                    <div>
+                        <button class="btnAqua" onclick="hide0()">¡Comencemos!</button>
+                    </div>
+                </div>
+
+                <div> <!--Astronauta-->
+                    <div class="backg">
+                        <div class="planet">
+                            <div class="r1"></div>
+                            <div class="r2"></div>
+                            <div class="r3"></div>
+                            <div class="r4"></div>
+                            <div class="r5"></div>
+                            <div class="r6"></div>
+                            <div class="r7"></div>
+                            <div class="r8"></div>
+                            <div class="shad"></div>
+                        </div>
+                        <div class="stars">
+                            <div class="s1"></div>
+                            <div class="s2"></div>
+                            <div class="s3"></div>
+                            <div class="s4"></div>
+                            <div class="s5"></div>
+                            <div class="s6"></div>
+                        </div>
+                        <div class="an">
+                            <div class="tank"></div>
+                            <div class="astro">
+
+                                <div class="helmet">
+                                    <div class="glass">
+                                        <div class="shine"></div>
+                                    </div>
+                                </div>
+                                <div class="dress">
+                                    <div class="c">
+                                        <div class="btn1"></div>
+                                        <div class="btn2"></div>
+                                        <div class="btn3"></div>
+                                        <div class="btn4"></div>
+                                    </div>
+                                </div>
+                                <div class="handl">
+                                    <div class="handl1">
+                                        <div class="glovel">
+                                            <div class="thumbl"></div>
+                                            <div class="b2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="handr">
+                                    <div class="handr1">
+                                        <div class="glover">
+                                            <div class="thumbr"></div>
+                                            <div class="b1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="legl">
+                                    <div class="bootl1">
+                                        <div class="bootl2"></div>
+                                    </div>
+                                </div>
+                                <div class="legr">
+                                    <div class="bootr1">
+                                        <div class="bootr2"></div>
+                                    </div>
+                                </div>
+                                <div class="pipe">
+                                    <div class="pipe2">
+                                        <div class="pipe3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--Fin Astronauta-->
+            </div>
+        </section>
+
+        <section class="containerSection" id="question-1">
+            <div class="boxText">
+                <form action="/action_page.php" id="question-1-form">
+                    <div>
+                        <p>¿Cuál es el planeta más grande del sistema solar?</p>
+                    </div>
+                    <br>
+                    <div class="questions">
+
+                        <div>
+                            <input type="radio" id="resp-q1A" name="planeta" value="saturno">
+                            <label for="saturno">Saturno</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="radio" id="resp-q1B" name="planeta" value="jupiter">
+                            <label for="jupiter">Jupiter</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="radio" id="resp-q1C" name="planeta" value="neptuno">
+                            <label for="neptuno">Neptuno</label>
+                        </div>
+                    </div>
+                </form>
+                <div class="buttonQuestion">
+                    <button class="btnAqua" onclick="hide1(); obtenerRespuestaQ1()">Siguiente</button>
+                </div>
+            </div>
+        </section>
+        <section class="containerSection" id="question-2">
+            <div class="boxText">
+                <form action="/action_page.php" id="question-2-form">
+                    <div>
+                        <p>¿El sol de nuestro sistema es....?</p>
+                    </div>
+                    <br>
+                    <div class="questions">
+
+                        <div>
+                            <input type="radio" id="resp-q2A" name="sol" value="asteroide">
+                            <label for="asteroide">un asteroide</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="radio" id="resp-q2B" name="sol" value="planeta">
+                            <label for="planeta">un planeta</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="radio" id="resp-q2C" name="sol" value="estrella">
+                            
+                            <label for="estrella">una estrella</label>
+                        </div>
+                    </div>
+                </form>
+                <div class="buttonQuestion">
+                    <button class="btnAqua" onclick="hide2(); obtenerRespuestaQ2()">Siguiente</button>
+                </div>
+            </div>
+        </section>
+        <section class="containerSection" id="question-3">
+            <div class="boxText">
+                <form action="/action_page.php" id="question-3-form">
+                    <div>
+                        <p>¿La tierra es un planeta de tipo...?</p>
+                    </div>
+                    <br>
+                    <div class="questions">
+
+                        <div>
+                            <input type="radio" id="resp-q3A" name="tierra" value="rocoso">
+                            <label for="Rocoso"> Rocoso</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="radio" id="resp-q3B" name="tierra" value="gaseoso">
+                            <label for="gaseoso">Gaseoso</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="radio" id="resp-q3C" name="tierra" value="hielo">
+                            <label for="hielo">De hielo</label>
+                        </div>
+                    </div>
+                </form>
+                <div class="buttonQuestion">
+                    <button class="btnAqua" onclick="hide3(); obtenerRespuestaQ3()">Siguiente</button>
+                </div>
+            </div>
+        </section>
+        <section class="containerSection" id="question-4">
+            <div class="boxText">
+                <form action="/action_page.php" id="question-4-form">
+                    <div>
+                        <p>¿Cuál es el planeta más pequeño del sistema solar?</p>
+                    </div>
+                    <br>
+                    <div class="questions">
+
+                        <div>
+                            <input type="radio" id="resp-q4A" name="planetapequeño" value="mercurio">
+                            <label for="mercurio"> Mercurio</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="radio" id="resp-q4B" name="planetapequeño" value="venus">
+                            <label for="venus">Venus</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="radio" id="resp-q4C" name="planetapequeño" value="marte">
+                            <label for="marte">Marte</label>
+                        </div>
+                    </div>
+                </form>
+                <div class="buttonQuestion">
+                    <button class="btnAqua" onclick="hide4(); obtenerRespuestaQ4()">Siguiente</button>
+                </div>
+            </div>
+        </section>
+        <section class="containerSection" id="question-5">
+            <div class="boxText">
+                <form action="/action_page.php" id="question-5-form">
+                    <div>
+                        <p>¿Cuál es el planeta conocido por sus anillos característicos?</p>
+                    </div>
+                    <br>
+                    <div class="questions">
+
+                        <div>
+                            <input type="radio" id="resp-q5A" name="planetasaturno" value="neptuno">
+                            <label for="neptuno"> Neptuno</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="radio" id="resp-q5B" name="planetasaturno" value="saturno">
+                            <label for="saturno">Saturno</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="radio" id="resp-q5C" name="planetasaturno" value="latierra">
+                            <label for="latierra">La tierra</label>
+                        </div>
+                    </div>
+                </form>
+                <div class="buttonQuestion">
+                    <button class="btnAqua" onclick="hide5(); obtenerRespuestaQ5()">Siguiente</button>
+                </div>
+            </div>
+        </section>
+        <section class="containerSection" id="question-6">
+            <div class="boxText">
+                <form action="/action_page.php" id="question-6-form">
+                    <div>
+                        <p>¿Cuál es el nombre de la galaxia en la que se encuentra nuestro sistema solar?"</p>
+                    </div>
+                    <br>
+                    <div class="questions">
+
+                        <div>
+                            <input type="radio" id="resp-q6A" name="galaxia" value="cumulovirgo">
+                            <label for="cumulovirgo">Cumulo de Virgo</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="radio" id="resp-q6B" name="galaxia" value="andromeda">
+                            <label for="andromeda">Andromeda</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="radio" id="resp-q6C" name="galaxia" value="vialactea">
+                            <label for="vialactea">La via lactea</label>
+                        </div>
+                    </div>
+                </form>
+                <div class="buttonQuestion">
+                    <button class="btnAqua" onclick="hide6(); obtenerRespuestaQ6()">Siguiente</button>
+                </div>
+            </div>
+        </section>
+        <section class="container2Section" id="resultado">
+            <div class="boxText2">
+                <div class="">
+                    <p id="result" style="color: #340758; font-weight: bold;"></p>
+                </div>
+                <br>
+                <div class="" style="color: #340758; font-weight: bold;">
+
+                    Esperamos que te hayas divertido en este pequeño proyecto, y quizá hayas aprendido algo nuevo sobre
+                    el universo
+                    hoy
+                </div>
+                <div>
+                    <button class="btnPurple" onclick="volveraJugar(); finalizarFlujo()">Volver a jugar</button>
+                </div>
+            </div>
+            </div>
+        </section>
+        <script type="text/javascript" src="index.js"></script>
+    </main>
+
+
+<footer class="foter">
+    <spam class="textfoter"> En algún lugar, algo increíble está esperando a ser descubierto. (Carl Sagan)</spam>
+</footer>
+
+</html>
